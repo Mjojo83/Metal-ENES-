@@ -1,0 +1,23 @@
+{
+  "id": "meganeura",
+  "era": "carbonifero",
+  "display_name": "Meganeura",
+  "ai_profile": "flier",
+  "health": 2,
+  "speed": 90,
+  "score": 250,
+  "damage": 1,
+  "cell": [
+    64,
+    48
+  ],
+  "sprite_size": [
+    44,
+    42
+  ],
+  "hurtbox": [
+    24,
+    14
+  ],
+  "sprite_frames": "res://assets/sprites/enemies/meganeura/sprite_frames.tres"
+}

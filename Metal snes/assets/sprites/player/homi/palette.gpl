@@ -1,0 +1,24 @@
+GIMP Palette
+Name: homi
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+  0   0   0	outline
+  1   1   1	c01
+ 47  29  24	c02
+ 54  53  49	c03
+ 90  45  28	c04
+117  31  67	c05
+ 92  70  54	c06
+143  41  79	c07
+136  79  53	c08
+206  72 106	c09
+188 120  99	c10
+237 100  99	c11
+241 139 138	c12
+225 179 155	c13
+ 26  28  34	c14
+ 92  98 110	c15
+164 170 182	c16
+124  74  38	c17
+ 74  42  22	c18
+214 160  60	c19

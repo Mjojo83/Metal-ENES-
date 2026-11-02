@@ -1,0 +1,23 @@
+{
+  "id": "megarachne",
+  "era": "carbonifero",
+  "display_name": "Megarachne",
+  "ai_profile": "ambush",
+  "health": 4,
+  "speed": 60,
+  "score": 350,
+  "damage": 1,
+  "cell": [
+    64,
+    48
+  ],
+  "sprite_size": [
+    49,
+    36
+  ],
+  "hurtbox": [
+    40,
+    24
+  ],
+  "sprite_frames": "res://assets/sprites/enemies/megarachne/sprite_frames.tres"
+}

@@ -1,0 +1,16 @@
+GIMP Palette
+Name: marrella
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+  0  56   0	c00
+ 29 100  38	c01
+ 90 139  80	c02
+154 166 176	c03
+214 219 217	c04
+238 240 230	c05
+100  35   0	c06
+147  88   0	c07
+185 133  70	c08
+175 193 155	c09
+ 16  12  20	outline
+134 164 128	c11

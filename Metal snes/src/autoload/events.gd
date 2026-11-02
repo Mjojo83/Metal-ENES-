@@ -14,3 +14,18 @@ signal camera_unlock_requested
 signal weapon_picked_up(weapon_id: StringName)
 signal hostage_rescued(hostage_id: StringName)
 signal score_changed(new_score: int)
+
+# Fase 1 (sistemas core)
+signal weapon_changed(weapon: WeaponData, ammo: int)
+signal ammo_changed(ammo: int)
+signal lives_changed(lives: int, continues: int)
+signal player_hit
+signal boss_health_changed(current: int, max_health: int)
+signal checkpoint_reached(position: Vector2)
+signal level_cleared
+signal game_over
+signal tremor_started(intensity: float)
+signal screenshake_requested(amount: float)
+signal hitstop_requested(frames: int)
+signal debug_give_weapon
+signal debug_spawn_enemy(position: Vector2)

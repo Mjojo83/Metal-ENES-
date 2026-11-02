@@ -1,0 +1,23 @@
+{
+  "id": "trilobites",
+  "era": "cambrico",
+  "display_name": "Trilobites",
+  "ai_profile": "advancer",
+  "health": 4,
+  "speed": 30,
+  "score": 100,
+  "damage": 1,
+  "cell": [
+    48,
+    32
+  ],
+  "sprite_size": [
+    28,
+    21
+  ],
+  "hurtbox": [
+    26,
+    12
+  ],
+  "sprite_frames": "res://assets/sprites/enemies/trilobites/sprite_frames.tres"
+}

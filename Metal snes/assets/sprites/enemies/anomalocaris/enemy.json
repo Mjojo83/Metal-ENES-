@@ -1,0 +1,23 @@
+{
+  "id": "anomalocaris",
+  "era": "cambrico",
+  "display_name": "Anomalocaris",
+  "ai_profile": "flier",
+  "health": 3,
+  "speed": 55,
+  "score": 300,
+  "damage": 1,
+  "cell": [
+    64,
+    32
+  ],
+  "sprite_size": [
+    47,
+    25
+  ],
+  "hurtbox": [
+    36,
+    16
+  ],
+  "sprite_frames": "res://assets/sprites/enemies/anomalocaris/sprite_frames.tres"
+}

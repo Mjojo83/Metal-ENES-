@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://src/components/character_data.gd" id="1_script"]
+[ext_resource type="SpriteFrames" path="res://assets/sprites/player/homi/sprite_frames.tres" id="2_frames"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/homi/portrait.png" id="3_portrait"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"homi"
+display_name = "Homi"
+carrera = "Neurociencias"
+tagline = "Entrego tarde, pero vivo."
+sprite_frames = ExtResource("2_frames")
+portrait = ExtResource("3_portrait")
+hurtbox_size = Vector2(10, 22)
+accent_color = Color(0.93, 0.39, 0.42, 1)

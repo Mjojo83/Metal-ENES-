@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://src/components/enemy_data.gd" id="1_script"]
+[ext_resource type="SpriteFrames" path="res://assets/sprites/enemies/meganeura/sprite_frames.tres" id="2_frames"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"meganeura"
+display_name = "Meganeura"
+era = "carbonifero"
+sprite_frames = ExtResource("2_frames")
+profile = 4
+max_health = 2
+speed = 90.0
+score = 250
+contact_damage = 1
+hurtbox_size = Vector2(24, 14)
+body_size = Vector2(14, 12)
+sprite_cell = Vector2i(64, 48)
+flying = true
+fly_height = 56.0
+detect_range = 240.0
+stop_distance = 0.0
+attack_range = 28.0
+attack_cooldown = 1.80
+telegraph_time = 0.40
+recover_time = 0.60
+lunge_speed = 190.0
+jump_velocity = -220.0
+jump_interval = 1.20
+ranged = false
+projectile_speed = 120.0
+hit_sound = &"hit"
+die_sound = &"enemy_die"

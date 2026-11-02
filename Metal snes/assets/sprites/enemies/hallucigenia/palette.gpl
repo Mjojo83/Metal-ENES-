@@ -1,0 +1,14 @@
+GIMP Palette
+Name: hallucigenia
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+ 62  18  42	c00
+108  67  77	c01
+147 109 110	c02
+130  24  47	c03
+178  89  87	c04
+216 138 128	c05
+ 16  11  16	c06
+207 179 162	c07
+ 16  12  20	outline
+229 180 173	c09

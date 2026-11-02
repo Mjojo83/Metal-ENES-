@@ -1,51 +1,99 @@
 # Catástrofe en la Biblioteca
 
-Run-and-gun 2D estilo Metal Slug. Godot **4.5.1 stable** (verificado localmente el 2026-09-15 — no
-actualizar de versión mayor a mitad de fase; solo entre hitos, con el repo limpio y etiquetado).
+Run-and-gun 2D estilo Metal Slug ambientado en la biblioteca de la ENES Juriquilla. Godot **4.5.1
+stable** (no actualizar de versión mayor a mitad de fase; solo entre hitos, con el repo limpio y
+etiquetado). PC, con mando Xbox o teclado y ratón.
+
+**Estado (noviembre 2026):** Fase 0 cerrada y comprobada; **Fase 1 (sistemas core) construida** y
+Fase 2/3 adelantadas en lo mínimo para que el piso 1 "DEEP FALL" sea jugable de principio a jefe:
+tres personajes con sprites reales, pistola/escopeta/ametralladora, 14 criaturas, camera gates,
+oleadas, HUD, selección de personaje. Ver `PROGRESS.md` para el detalle y lo que falta verificar.
 
 ## Documentación
 
 Antes de tocar código, lee esto en orden:
 
-1. [`docs/02_Documentacion_Proyecto.docx`](docs/02_Documentacion_Proyecto.docx) — la idea, el diseño,
-   las decisiones (ADRs) y las reglas de tono/legales. Se actualiza según evoluciona el proyecto.
-2. [`docs/01_Arquitectura_Tecnica.docx`](docs/01_Arquitectura_Tecnica.docx) — el orden de construcción
-   paso a paso, con su comprobación. Es la fuente de verdad de "qué sigue".
-3. [`docs/ideas/Ideas.docx`](docs/ideas/Ideas.docx) — notas sueltas de brainstorming, sin desarrollar.
+1. [`docs/02_Documentacion_Proyecto.docx`](docs/02_Documentacion_Proyecto.docx) — idea, diseño, ADRs y reglas de tono/legales.
+2. [`docs/01_Arquitectura_Tecnica.docx`](docs/01_Arquitectura_Tecnica.docx) — orden de construcción paso a paso, con su comprobación.
+3. [`docs/PIPELINE_ARTE.md`](docs/PIPELINE_ARTE.md) — cómo se generan y regeneran todos los sprites, tiles, fuente y SFX.
+4. [`docs/ROLES_PROPUESTAS/`](docs/ROLES_PROPUESTAS/README.md) — cinco revisiones por rol (niveles, arte, controles, narrativa/audio, producción/QA). **Son propuestas**, no decisiones.
+5. [`docs/REFERENCIAS_Y_LICENCIAS.md`](docs/REFERENCIAS_Y_LICENCIAS.md) — qué hay que resolver antes de publicar.
+6. [`docs/ideas/Ideas.docx`](docs/ideas/Ideas.docx) — notas sueltas.
 
-**Alcance:** tres pisos, uno por uno: Ciencias de la Tierra (en producción), Órtesis y Prótesis, y Neurociencias (ADR-012).
+**Alcance:** tres pisos, uno por uno: Ciencias de la Tierra (en producción como descenso "DEEP FALL"),
+Órtesis y Prótesis, y Neurociencias (ADR-012).
 
-**Estado actual:** Fase 0 (prototipo gris) terminada y comprobada; sigue la Fase 1 (sistemas core). Ver `PROGRESS.md` para el detalle paso a paso.
-
-**Arte:** sale del Laboratorio de sprites y de su editor PixelForja (`O:\Programas\ANIMACIONES\Ortesis o protesis`), que
-importan, alinean, retocan y prueban sprites y escenarios antes de traerlos aquí (ADR-011). El material de Metal Slug que hay
-allá es solo referencia y nunca entra a este repo (ADR-013).
-
-## Cómo correr el proyecto
+## Cómo correr el juego
 
 ```
 "O:\Godot_v4.5.1-stable_win64.exe\Godot_v4.5.1-stable_win64.exe" --path "O:\Programas\Metal ENES" --editor
 ```
 
-O abre `project.godot` con el editor de Godot 4.5.x.
+O abre `project.godot` con Godot 4.5.x y presiona F5. La escena principal es `src/ui/title.tscn`:
+título → selección de personaje → `src/levels/deep_fall.tscn` → game over / piso despejado → título.
+
+La primera vez, deja que el editor importe los assets (o corre `--headless --import`).
+
+## Controles
+
+| Acción | Teclado | Ratón | Mando Xbox |
+|---|---|---|---|
+| Mover / apuntar | WASD o flechas | el cursor apunta (ver abajo) | stick izquierdo, D-pad |
+| Saltar | Espacio / Z | — | A |
+| Disparar | J / X | botón izquierdo | X o gatillo derecho |
+| Granada (reservado) | K / C | botón derecho | B o LB |
+| Melee (reservado) | L / V | botón central | Y o RB |
+| Agacharse / arrastrarse | abajo / abajo + dirección | — | abajo |
+| Pausa | Esc | — | Start |
+
+El ratón **no** apunta en 360°: su ángulo se cuantiza a las direcciones de Metal Slug según el estado
+(de pie: horizontal o arriba; corriendo/agachado: horizontal; en el aire: 8 direcciones) y aparece una
+retícula en la dirección real. Manda el último dispositivo usado (`Game.settings.mouse_aim`:
+`auto`/`on`/`off`). Al acabarse la munición se vuelve a la pistola; recoger una caja reemplaza el arma.
+
+Teclas de depuración (solo en builds de depuración): **F1** overlay, **F2** hitboxes, **F3**
+invencibilidad, **F6** ciclar armas, **F7** invocar un enemigo. (F4 frame-step y F5 warp: pendientes.)
 
 ## Cómo correr las comprobaciones automatizadas
 
-Cada paso de la Fase 0 en adelante que se pueda verificar sin abrir el editor tiene un script en
-`src/debug/`. Ejemplo:
+Cada sistema tiene un script en `src/debug/` que imprime `RESULTADO: PASS`. Para correrlos todos:
 
 ```
-"O:\Godot_v4.5.1-stable_win64.exe\Godot_v4.5.1-stable_win64_console.exe" --headless --path "O:\Programas\Metal ENES" --script "res://src/debug/check_project_settings.gd"
+.\run_all_checks.ps1 -Godot "O:\Godot_v4.5.1-stable_win64.exe\Godot_v4.5.1-stable_win64_console.exe"
 ```
 
-Debe imprimir `RESULTADO: PASS`. Esto no reemplaza jugar el juego a mano — solo atrapa regresiones de
-configuración rápido, sin abrir el editor.
+(o `./run_all_checks.sh /ruta/godot` en Linux/macOS). Importa el proyecto primero y luego corre 3
+scripts (`--script`) y 11 escenas. Uno suelto:
 
-## Teclas de depuración
+```
+"...\Godot_v4.5.1-stable_win64_console.exe" --headless --path . --script "res://src/debug/check_project_settings.gd"
+"...\Godot_v4.5.1-stable_win64_console.exe" --headless --path . "res://src/debug/check_weapons.tscn"
+```
 
-Ver el documento de arquitectura, paso 1.10, para la lista completa (F1 overlay, F2 hitboxes, F3
-invencibilidad, F4 frame-step, F5 warp, F6 dar arma, F7 spawn). Se van agregando conforme se
-implementan; el estado real está en `PROGRESS.md`.
+Las escenas (`.tscn`) necesitan autoloads; `extends SceneTree` + `--script` no los tiene.
+
+## Estructura
+
+```
+src/autoload/      Events, Game, Pools, AudioManager, Debug
+src/components/    Health, Hurtbox, Hitbox, WeaponData/WeaponComponent, CharacterData, EnemyData
+src/actors/        player (+ player_input), enemies (enemy.gd = perfiles de IA por datos)
+src/levels/        level.gd (nivel desde JSON), game_camera, camera_gate, wave_spawner, deep_fall.tscn
+src/ui/            title, character_select, hud
+src/projectiles/   bullet (jugador, pooled), enemy_bullet
+src/pickups/       weapon_pickup
+data/              weapons/*.tres, characters/*.tres, enemies/*.tres, levels/*.json, waves/*.json
+assets/            sprites generados, tileset, fondos, fuente bitmap, SFX (todo regenerable)
+tools/             pixel_lab (arte), level_gen (nivel/oleadas/datos), mockup (maquetas 320×224)
+```
+
+## Arte
+
+Sale de `tools/pixel_lab/` a partir de `../enemigos y personajes/` (ver `docs/PIPELINE_ARTE.md`).
+Las referencias de criaturas son de terceros y solo sirven de referencia (ADR-008/013); lo que
+entra a `res://` son los sprites derivados, que hay que sustituir por referencias propias o
+libres antes de publicar (`docs/REFERENCIAS_Y_LICENCIAS.md`). El material de Metal Slug nunca
+entra al repo.
 
 ## Regla de proceso
 

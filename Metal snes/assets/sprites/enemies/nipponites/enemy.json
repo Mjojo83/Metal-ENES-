@@ -1,0 +1,23 @@
+{
+  "id": "nipponites",
+  "era": "cretacico",
+  "display_name": "Nipponites",
+  "ai_profile": "flier",
+  "health": 2,
+  "speed": 35,
+  "score": 150,
+  "damage": 1,
+  "cell": [
+    48,
+    48
+  ],
+  "sprite_size": [
+    39,
+    38
+  ],
+  "hurtbox": [
+    22,
+    22
+  ],
+  "sprite_frames": "res://assets/sprites/enemies/nipponites/sprite_frames.tres"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "calamites",
+  "era": "carbonifero",
+  "display_name": "Calamites",
+  "ai_profile": "static",
+  "health": 4,
+  "speed": 0,
+  "score": 100,
+  "damage": 1,
+  "cell": [
+    48,
+    112
+  ],
+  "sprite_size": [
+    35,
+    92
+  ],
+  "hurtbox": [
+    12,
+    80
+  ],
+  "sprite_frames": "res://assets/sprites/enemies/calamites/sprite_frames.tres"
+}

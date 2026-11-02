@@ -1,0 +1,23 @@
+{
+  "id": "eryops",
+  "era": "carbonifero",
+  "display_name": "Eryops",
+  "ai_profile": "advancer",
+  "health": 5,
+  "speed": 40,
+  "score": 300,
+  "damage": 1,
+  "cell": [
+    96,
+    48
+  ],
+  "sprite_size": [
+    80,
+    32
+  ],
+  "hurtbox": [
+    40,
+    22
+  ],
+  "sprite_frames": "res://assets/sprites/enemies/eryops/sprite_frames.tres"
+}

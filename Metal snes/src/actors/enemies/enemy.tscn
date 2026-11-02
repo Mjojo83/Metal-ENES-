@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://src/actors/enemies/enemy.gd" id="1_script"]
+[ext_resource type="Script" path="res://src/components/hurtbox_component.gd" id="2_hurtbox"]
+[ext_resource type="Script" path="res://src/components/hitbox_component.gd" id="3_hitbox"]
+[ext_resource type="Script" path="res://src/components/health_component.gd" id="4_health"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_body"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hurt"]
+size = Vector2(20, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hit"]
+size = Vector2(18, 18)
+
+[node name="Enemy" type="CharacterBody2D" groups=["enemies"]]
+collision_layer = 8
+collision_mask = 5
+script = ExtResource("1_script")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_body")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+centered = false
+offset = Vector2(-24, -48)
+
+[node name="Hurtbox" type="Area2D" parent="." node_paths=PackedStringArray("health_component")]
+collision_layer = 64
+collision_mask = 32
+script = ExtResource("2_hurtbox")
+health_component = NodePath("../Health")
+
+[node name="Shape" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(0, -10)
+shape = SubResource("RectangleShape2D_hurt")
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 128
+collision_mask = 16
+script = ExtResource("3_hitbox")
+
+[node name="Shape" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, -10)
+shape = SubResource("RectangleShape2D_hit")
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("4_health")
+max_health = 3

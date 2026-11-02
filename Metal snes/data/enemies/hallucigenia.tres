@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://src/components/enemy_data.gd" id="1_script"]
+[ext_resource type="SpriteFrames" path="res://assets/sprites/enemies/hallucigenia/sprite_frames.tres" id="2_frames"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"hallucigenia"
+display_name = "Hallucigenia"
+era = "cambrico"
+sprite_frames = ExtResource("2_frames")
+profile = 3
+max_health = 2
+speed = 45.0
+score = 150
+contact_damage = 1
+hurtbox_size = Vector2(20, 20)
+body_size = Vector2(12, 20)
+sprite_cell = Vector2i(32, 48)
+flying = false
+fly_height = 48.0
+detect_range = 180.0
+stop_distance = 0.0
+attack_range = 24.0
+attack_cooldown = 1.60
+telegraph_time = 0.40
+recover_time = 0.60
+lunge_speed = 90.0
+jump_velocity = -190.0
+jump_interval = 0.90
+ranged = false
+projectile_speed = 120.0
+hit_sound = &"hit"
+die_sound = &"enemy_die"

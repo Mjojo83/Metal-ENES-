@@ -1,0 +1,14 @@
+GIMP Palette
+Name: quetzalcoatlus
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+ 61   9   0	c00
+108  59  35	c01
+146 101  75	c02
+111  88  49	c03
+162 138  94	c04
+205 182 139	c05
+ 26   8   0	c06
+244 146  89	c07
+ 16  12  20	outline
+197 175 154	c09

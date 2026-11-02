@@ -1,0 +1,23 @@
+{
+  "id": "quetzalcoatlus",
+  "era": "cretacico",
+  "display_name": "Quetzalcoatlus",
+  "ai_profile": "jumper",
+  "health": 6,
+  "speed": 50,
+  "score": 600,
+  "damage": 1,
+  "cell": [
+    64,
+    96
+  ],
+  "sprite_size": [
+    54,
+    80
+  ],
+  "hurtbox": [
+    28,
+    56
+  ],
+  "sprite_frames": "res://assets/sprites/enemies/quetzalcoatlus/sprite_frames.tres"
+}

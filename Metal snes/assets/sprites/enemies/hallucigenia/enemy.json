@@ -1,0 +1,23 @@
+{
+  "id": "hallucigenia",
+  "era": "cambrico",
+  "display_name": "Hallucigenia",
+  "ai_profile": "jumper",
+  "health": 2,
+  "speed": 45,
+  "score": 150,
+  "damage": 1,
+  "cell": [
+    32,
+    48
+  ],
+  "sprite_size": [
+    16,
+    28
+  ],
+  "hurtbox": [
+    20,
+    20
+  ],
+  "sprite_frames": "res://assets/sprites/enemies/hallucigenia/sprite_frames.tres"
+}

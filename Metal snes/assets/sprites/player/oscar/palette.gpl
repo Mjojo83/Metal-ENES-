@@ -1,0 +1,22 @@
+GIMP Palette
+Name: oscar
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+  1   1   1	outline
+ 13  14  10	c01
+ 51  38  27	c02
+ 63  53  38	c03
+ 90  78  53	c04
+104 109 103	c05
+129 115  77	c06
+175 104  79	c07
+154 137 100	c08
+139 145 139	c09
+208 139 104	c10
+241 187 151	c11
+ 26  28  34	c12
+ 92  98 110	c13
+164 170 182	c14
+124  74  38	c15
+ 74  42  22	c16
+214 160  60	c17

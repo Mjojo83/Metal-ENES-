@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://src/components/weapon_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/sprites/vfx/bullet_hmg.png" id="2_bullet"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/icon_hmg.png" id="3_icon"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pickups/crate_hmg.png" id="4_pickup"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"heavy_machine_gun"
+display_name = "Ametralladora pesada"
+shout = "¡MATRACA!"
+projectile_key = &"bullet"
+bullet_texture = ExtResource("2_bullet")
+damage = 1
+fire_rate = 15.0
+projectiles_per_shot = 1
+spread_degrees = 6.0
+projectile_speed = 420.0
+projectile_range = 440.0
+max_ammo = 200
+is_default = false
+auto_fire = true
+icon = ExtResource("3_icon")
+pickup_texture = ExtResource("4_pickup")
+fire_sound = &"shot_hmg"
+recoil_px = 1.0
+screenshake = 1.0
+hitstop_frames = 0
+muzzle_frames = 1

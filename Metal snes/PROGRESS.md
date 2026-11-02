@@ -122,6 +122,68 @@ etiquetar `v0.1-hito0` (en vez del actual `v0.1-hito0-wip`) falta:
 - El criterio "le diste el teclado a alguien sin explicarle nada" — inherentemente no
   automatizable.
 
+## Fase 1 — Sistemas core (noviembre 2026)
+
+Construida en una sola iteración junto con lo mínimo de las fases 2 y 3 para que el piso 1 sea
+jugable. ⚠️ **Importante:** esta iteración se escribió en un entorno sin Godot. Todo el GDScript
+pasa `gdparse` (sintaxis 4.5) y las escenas/recursos referencian archivos que existen, pero
+**ninguna prueba se ejecutó en el motor**. Lo primero que hay que hacer es correr
+`run_all_checks.ps1` y arreglar lo que salga; los checks de la fase 0 se actualizaron al diseño
+nuevo (pooling, componentes) y deben seguir en verde.
+
+### Paso 1.1 — Capas de colisión — ⚠️ hecho, sin ejecutar
+- Los 12 nombres en `project.godot` (`[layer_names]`) y los bits en `src/core/layers.gd`.
+- Comprobación: `src/debug/check_collision_layers.gd` (nombres, bits y máscara de la bala).
+
+### Paso 1.2 — Componentes de daño — ⚠️ hecho, sin ejecutar
+- `HealthComponent` (vida, i-frames en física), `HurtboxComponent` (Area2D), `HitboxComponent`.
+- El jugador, el enemigo genérico y la caja de la fase 0 se ensamblan con ellos. Muerte de un golpe
+  (recomendación 5.2) + 1.5 s de i-frames con parpadeo al reaparecer.
+- Comprobación: `check_damage_components.tscn`.
+
+### Paso 1.3 — Máquina de estados — ⏳ parcial
+- El jugador sigue con `PhysState` (enum) + animación elegida por estado y apuntado; disparar se
+  superpone. La StateMachine formal con nodos queda para cuando haga falta (recorte sugerido por QA).
+
+### Paso 1.4 — Object pooling — ⚠️ hecho, sin ejecutar
+- `Pools` precarga 80 balas, 60 proyectiles enemigos y 48 efectos; `acquire()/release()`.
+- Comprobación: `check_pools_and_data.tscn` (conteo de nodos plano, doble release ignorado).
+
+### Paso 1.5 — Armas como Resource — ⚠️ hecho, sin ejecutar
+- `WeaponData` + `WeaponComponent`; `data/weapons/pistol.tres` (8/s, infinita), `shotgun.tres`
+  (5 perdigones, 25°, 2/s, 30 cartuchos), `heavy_machine_gun.tres` (15/s, 200). Al acabarse la
+  munición vuelve a la pistola. Gritos: ¡DE CAJÓN! ¡ABANICO! ¡MATRACA! (propuesta del rol de narrativa).
+- Comprobación: `check_weapons.tscn` (cadencia 5 s, dispersión, munición, vuelta a la pistola).
+
+### Pasos 1.6-1.8 — Cámara, gates, oleadas — ⚠️ hecho, sin ejecutar
+- `GameCamera`: deadzone 40×24, lookahead 32 px, límites, lock/unlock, shake, hitstop.
+- `CameraGate`: traba la cámara, arranca la oleada, se rearma si el jugador muere, fija checkpoint.
+- `WaveSpawner`: JSON en segundos, aborta al morir, `wave_cleared` con `all_dead`.
+- Comprobación: `check_camera_gate_wave.tscn` (incluye morir a media oleada).
+
+### Paso 1.9 — Perfiles de IA — ⚠️ hecho, sin ejecutar
+- `EnemyData` (Resource) + `enemy.gd`: Avanzador, Estático (con esporas), Emboscada, Saltador,
+  Volador y Jefe (Avanzador grande con barra de vida). 14 `.tres` en `data/enemies/`.
+- Comprobación: `check_enemy_profiles.tscn`.
+
+### Paso 1.10 — Depuración — ⚠️ parcial
+- F1 overlay, F2 hitboxes, F3 invencible, F6 arma, F7 spawn. Faltan F4 (frame-step) y F5 (warp).
+
+### Adelantos de fases 2 y 3 (para que sea jugable)
+- Nivel desde JSON (`data/levels/deep_fall_01.json`): mapa ASCII, colisiones fusionadas,
+  plataformas one-way, parallax 2 capas, 5 gates, 4 cajas de armas, letreros de era.
+- HUD con fuente bitmap propia; selección de personaje; título; game over; piso despejado.
+- Sprites: 3 personajes × 13 animaciones × 3 armas; 14 criaturas × 5 animaciones. Ver
+  `docs/PIPELINE_ARTE.md`. Maquetas a 320×224 en `docs/mockups/`.
+- Temblor cada 24 s (solo sacudida y aviso; sin escombros todavía).
+- InputMap ampliado: ratón, gatillo derecho, LB/RB, F1-F7; deadzones 0.4/0.6.
+
+### Pendiente inmediato
+1. Correr `run_all_checks.ps1` (14 comprobaciones) y jugar el nivel con mando y con ratón.
+2. Confirmar visualmente: anclas (ciclar animaciones sin moverse), letterboxing, legibilidad del HUD a 1x.
+3. Decidir sobre `docs/REFERENCIAS_Y_LICENCIAS.md` (referencias de terceros, Óscar).
+4. Hito 1: etiquetar `v0.2-hito1` cuando los 14 checks pasen y el nivel se recorra sin atorones.
+
 ## Convención de este archivo
 - ✅ hecho y comprobado — ⏳ pendiente — ⚠️ hecho pero con algo por revisar (se explica por qué).
 - Se actualiza en cada paso, no al final de la fase.

@@ -1,0 +1,65 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://src/levels/level.gd" id="1_level"]
+[ext_resource type="PackedScene" path="res://src/actors/player/player.tscn" id="2_player"]
+[ext_resource type="Script" path="res://src/levels/game_camera.gd" id="3_camera"]
+[ext_resource type="Script" path="res://src/levels/wave_spawner.gd" id="4_spawner"]
+[ext_resource type="PackedScene" path="res://src/ui/hud.tscn" id="5_hud"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/reticle.png" id="6_reticle"]
+[ext_resource type="Texture2D" path="res://assets/backgrounds/cave_far.png" id="7_far"]
+[ext_resource type="Texture2D" path="res://assets/backgrounds/cave_mid.png" id="8_mid"]
+
+[node name="DeepFall" type="Node2D"]
+script = ExtResource("1_level")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Far" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(320, 224)
+
+[node name="Sprite" type="Sprite2D" parent="ParallaxBackground/Far"]
+texture = ExtResource("7_far")
+centered = false
+
+[node name="Mid" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.4, 1)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite" type="Sprite2D" parent="ParallaxBackground/Mid"]
+texture = ExtResource("8_mid")
+centered = false
+
+[node name="Sprite2" type="Sprite2D" parent="ParallaxBackground/Mid"]
+position = Vector2(0, 224)
+texture = ExtResource("8_mid")
+centered = false
+
+[node name="Terrain" type="TileMapLayer" parent="."]
+
+[node name="Colliders" type="Node2D" parent="."]
+
+[node name="Signs" type="Node2D" parent="."]
+
+[node name="Gates" type="Node2D" parent="."]
+
+[node name="Pickups" type="Node2D" parent="."]
+
+[node name="Actors" type="Node2D" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("2_player")]
+position = Vector2(48, 192)
+
+[node name="Reticle" type="Sprite2D" parent="."]
+visible = false
+z_index = 20
+texture = ExtResource("6_reticle")
+
+[node name="GameCamera" type="Camera2D" parent="."]
+position = Vector2(160, 112)
+script = ExtResource("3_camera")
+
+[node name="WaveSpawner" type="Node" parent="."]
+script = ExtResource("4_spawner")
+
+[node name="HUD" parent="." instance=ExtResource("5_hud")]

@@ -1,0 +1,10 @@
+GIMP Palette
+Name: anomalocaris
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+106  35  49	c00
+154  90  87	c01
+193 135 125	c02
+ 24   8   6	c03
+234 215 217	c04
+ 16  12  20	outline

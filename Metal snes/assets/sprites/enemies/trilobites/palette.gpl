@@ -1,0 +1,13 @@
+GIMP Palette
+Name: trilobites
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+ 84  87  88	c00
+137 136 126	c01
+182 179 164	c02
+ 35  43  51	c03
+ 84  87  85	c04
+127 127 119	c05
+184 186 172	c06
+ 16  12  20	outline
+213 211 202	c08

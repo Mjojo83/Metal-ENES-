@@ -1,0 +1,14 @@
+GIMP Palette
+Name: megarachne
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+172 106   0	c00
+222 162  72	c01
+255 210 133	c02
+ 72  18   0	c03
+118  68  26	c04
+157 111  72	c05
+ 26   8   0	c06
+204 141  80	c07
+ 16  12  20	outline
+223 195 161	c09

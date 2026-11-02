@@ -1,0 +1,827 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/idle__pistol.png" id="1_idle__pistol"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/run__pistol.png" id="2_run__pistol"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/jump__pistol.png" id="3_jump__pistol"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/fall__pistol.png" id="4_fall__pistol"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/shoot__pistol.png" id="5_shoot__pistol"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/aim_up__pistol.png" id="6_aim_up__pistol"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/shoot_up__pistol.png" id="7_shoot_up__pistol"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/aim_diag_up__pistol.png" id="8_aim_diag_up__pistol"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/aim_diag_down__pistol.png" id="9_aim_diag_down__pistol"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/aim_down__pistol.png" id="10_aim_down__pistol"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/crouch__pistol.png" id="11_crouch__pistol"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/crouch_shoot__pistol.png" id="12_crouch_shoot__pistol"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/die__pistol.png" id="13_die__pistol"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/idle__shotgun.png" id="14_idle__shotgun"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/run__shotgun.png" id="15_run__shotgun"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/jump__shotgun.png" id="16_jump__shotgun"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/fall__shotgun.png" id="17_fall__shotgun"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/shoot__shotgun.png" id="18_shoot__shotgun"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/aim_up__shotgun.png" id="19_aim_up__shotgun"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/shoot_up__shotgun.png" id="20_shoot_up__shotgun"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/aim_diag_up__shotgun.png" id="21_aim_diag_up__shotgun"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/aim_diag_down__shotgun.png" id="22_aim_diag_down__shotgun"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/aim_down__shotgun.png" id="23_aim_down__shotgun"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/crouch__shotgun.png" id="24_crouch__shotgun"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/crouch_shoot__shotgun.png" id="25_crouch_shoot__shotgun"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/die__shotgun.png" id="26_die__shotgun"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/idle__hmg.png" id="27_idle__hmg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/run__hmg.png" id="28_run__hmg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/jump__hmg.png" id="29_jump__hmg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/fall__hmg.png" id="30_fall__hmg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/shoot__hmg.png" id="31_shoot__hmg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/aim_up__hmg.png" id="32_aim_up__hmg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/shoot_up__hmg.png" id="33_shoot_up__hmg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/aim_diag_up__hmg.png" id="34_aim_diag_up__hmg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/aim_diag_down__hmg.png" id="35_aim_diag_down__hmg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/aim_down__hmg.png" id="36_aim_down__hmg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/crouch__hmg.png" id="37_crouch__hmg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/crouch_shoot__hmg.png" id="38_crouch_shoot__hmg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/mariana/die__hmg.png" id="39_die__hmg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle__pistol_0"]
+atlas = ExtResource("1_idle__pistol")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle__pistol_1"]
+atlas = ExtResource("1_idle__pistol")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle__pistol_2"]
+atlas = ExtResource("1_idle__pistol")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle__pistol_3"]
+atlas = ExtResource("1_idle__pistol")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__pistol_0"]
+atlas = ExtResource("2_run__pistol")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__pistol_1"]
+atlas = ExtResource("2_run__pistol")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__pistol_2"]
+atlas = ExtResource("2_run__pistol")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__pistol_3"]
+atlas = ExtResource("2_run__pistol")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__pistol_4"]
+atlas = ExtResource("2_run__pistol")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__pistol_5"]
+atlas = ExtResource("2_run__pistol")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jump__pistol_0"]
+atlas = ExtResource("3_jump__pistol")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fall__pistol_0"]
+atlas = ExtResource("4_fall__pistol")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shoot__pistol_0"]
+atlas = ExtResource("5_shoot__pistol")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shoot__pistol_1"]
+atlas = ExtResource("5_shoot__pistol")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aim_up__pistol_0"]
+atlas = ExtResource("6_aim_up__pistol")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shoot_up__pistol_0"]
+atlas = ExtResource("7_shoot_up__pistol")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shoot_up__pistol_1"]
+atlas = ExtResource("7_shoot_up__pistol")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aim_diag_up__pistol_0"]
+atlas = ExtResource("8_aim_diag_up__pistol")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aim_diag_down__pistol_0"]
+atlas = ExtResource("9_aim_diag_down__pistol")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aim_down__pistol_0"]
+atlas = ExtResource("10_aim_down__pistol")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crouch__pistol_0"]
+atlas = ExtResource("11_crouch__pistol")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crouch_shoot__pistol_0"]
+atlas = ExtResource("12_crouch_shoot__pistol")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crouch_shoot__pistol_1"]
+atlas = ExtResource("12_crouch_shoot__pistol")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_die__pistol_0"]
+atlas = ExtResource("13_die__pistol")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_die__pistol_1"]
+atlas = ExtResource("13_die__pistol")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_die__pistol_2"]
+atlas = ExtResource("13_die__pistol")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_die__pistol_3"]
+atlas = ExtResource("13_die__pistol")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_die__pistol_4"]
+atlas = ExtResource("13_die__pistol")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle__shotgun_0"]
+atlas = ExtResource("14_idle__shotgun")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle__shotgun_1"]
+atlas = ExtResource("14_idle__shotgun")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle__shotgun_2"]
+atlas = ExtResource("14_idle__shotgun")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle__shotgun_3"]
+atlas = ExtResource("14_idle__shotgun")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__shotgun_0"]
+atlas = ExtResource("15_run__shotgun")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__shotgun_1"]
+atlas = ExtResource("15_run__shotgun")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__shotgun_2"]
+atlas = ExtResource("15_run__shotgun")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__shotgun_3"]
+atlas = ExtResource("15_run__shotgun")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__shotgun_4"]
+atlas = ExtResource("15_run__shotgun")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__shotgun_5"]
+atlas = ExtResource("15_run__shotgun")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jump__shotgun_0"]
+atlas = ExtResource("16_jump__shotgun")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fall__shotgun_0"]
+atlas = ExtResource("17_fall__shotgun")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shoot__shotgun_0"]
+atlas = ExtResource("18_shoot__shotgun")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shoot__shotgun_1"]
+atlas = ExtResource("18_shoot__shotgun")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aim_up__shotgun_0"]
+atlas = ExtResource("19_aim_up__shotgun")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shoot_up__shotgun_0"]
+atlas = ExtResource("20_shoot_up__shotgun")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shoot_up__shotgun_1"]
+atlas = ExtResource("20_shoot_up__shotgun")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aim_diag_up__shotgun_0"]
+atlas = ExtResource("21_aim_diag_up__shotgun")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aim_diag_down__shotgun_0"]
+atlas = ExtResource("22_aim_diag_down__shotgun")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aim_down__shotgun_0"]
+atlas = ExtResource("23_aim_down__shotgun")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crouch__shotgun_0"]
+atlas = ExtResource("24_crouch__shotgun")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crouch_shoot__shotgun_0"]
+atlas = ExtResource("25_crouch_shoot__shotgun")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crouch_shoot__shotgun_1"]
+atlas = ExtResource("25_crouch_shoot__shotgun")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_die__shotgun_0"]
+atlas = ExtResource("26_die__shotgun")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_die__shotgun_1"]
+atlas = ExtResource("26_die__shotgun")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_die__shotgun_2"]
+atlas = ExtResource("26_die__shotgun")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_die__shotgun_3"]
+atlas = ExtResource("26_die__shotgun")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_die__shotgun_4"]
+atlas = ExtResource("26_die__shotgun")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle__hmg_0"]
+atlas = ExtResource("27_idle__hmg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle__hmg_1"]
+atlas = ExtResource("27_idle__hmg")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle__hmg_2"]
+atlas = ExtResource("27_idle__hmg")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle__hmg_3"]
+atlas = ExtResource("27_idle__hmg")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__hmg_0"]
+atlas = ExtResource("28_run__hmg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__hmg_1"]
+atlas = ExtResource("28_run__hmg")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__hmg_2"]
+atlas = ExtResource("28_run__hmg")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__hmg_3"]
+atlas = ExtResource("28_run__hmg")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__hmg_4"]
+atlas = ExtResource("28_run__hmg")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_run__hmg_5"]
+atlas = ExtResource("28_run__hmg")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jump__hmg_0"]
+atlas = ExtResource("29_jump__hmg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fall__hmg_0"]
+atlas = ExtResource("30_fall__hmg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shoot__hmg_0"]
+atlas = ExtResource("31_shoot__hmg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shoot__hmg_1"]
+atlas = ExtResource("31_shoot__hmg")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aim_up__hmg_0"]
+atlas = ExtResource("32_aim_up__hmg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shoot_up__hmg_0"]
+atlas = ExtResource("33_shoot_up__hmg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shoot_up__hmg_1"]
+atlas = ExtResource("33_shoot_up__hmg")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aim_diag_up__hmg_0"]
+atlas = ExtResource("34_aim_diag_up__hmg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aim_diag_down__hmg_0"]
+atlas = ExtResource("35_aim_diag_down__hmg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aim_down__hmg_0"]
+atlas = ExtResource("36_aim_down__hmg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crouch__hmg_0"]
+atlas = ExtResource("37_crouch__hmg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crouch_shoot__hmg_0"]
+atlas = ExtResource("38_crouch_shoot__hmg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crouch_shoot__hmg_1"]
+atlas = ExtResource("38_crouch_shoot__hmg")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_die__hmg_0"]
+atlas = ExtResource("39_die__hmg")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_die__hmg_1"]
+atlas = ExtResource("39_die__hmg")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_die__hmg_2"]
+atlas = ExtResource("39_die__hmg")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_die__hmg_3"]
+atlas = ExtResource("39_die__hmg")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_die__hmg_4"]
+atlas = ExtResource("39_die__hmg")
+region = Rect2(256, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle__pistol_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle__pistol_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle__pistol_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle__pistol_3")
+}],
+"loop": true,
+"name": &"idle__pistol",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__pistol_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__pistol_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__pistol_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__pistol_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__pistol_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__pistol_5")
+}],
+"loop": true,
+"name": &"run__pistol",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jump__pistol_0")
+}],
+"loop": false,
+"name": &"jump__pistol",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fall__pistol_0")
+}],
+"loop": false,
+"name": &"fall__pistol",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shoot__pistol_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shoot__pistol_1")
+}],
+"loop": false,
+"name": &"shoot__pistol",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aim_up__pistol_0")
+}],
+"loop": false,
+"name": &"aim_up__pistol",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shoot_up__pistol_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shoot_up__pistol_1")
+}],
+"loop": false,
+"name": &"shoot_up__pistol",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aim_diag_up__pistol_0")
+}],
+"loop": false,
+"name": &"aim_diag_up__pistol",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aim_diag_down__pistol_0")
+}],
+"loop": false,
+"name": &"aim_diag_down__pistol",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aim_down__pistol_0")
+}],
+"loop": false,
+"name": &"aim_down__pistol",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crouch__pistol_0")
+}],
+"loop": false,
+"name": &"crouch__pistol",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crouch_shoot__pistol_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crouch_shoot__pistol_1")
+}],
+"loop": false,
+"name": &"crouch_shoot__pistol",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_die__pistol_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_die__pistol_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_die__pistol_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_die__pistol_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_die__pistol_4")
+}],
+"loop": false,
+"name": &"die__pistol",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle__shotgun_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle__shotgun_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle__shotgun_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle__shotgun_3")
+}],
+"loop": true,
+"name": &"idle__shotgun",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__shotgun_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__shotgun_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__shotgun_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__shotgun_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__shotgun_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__shotgun_5")
+}],
+"loop": true,
+"name": &"run__shotgun",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jump__shotgun_0")
+}],
+"loop": false,
+"name": &"jump__shotgun",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fall__shotgun_0")
+}],
+"loop": false,
+"name": &"fall__shotgun",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shoot__shotgun_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shoot__shotgun_1")
+}],
+"loop": false,
+"name": &"shoot__shotgun",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aim_up__shotgun_0")
+}],
+"loop": false,
+"name": &"aim_up__shotgun",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shoot_up__shotgun_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shoot_up__shotgun_1")
+}],
+"loop": false,
+"name": &"shoot_up__shotgun",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aim_diag_up__shotgun_0")
+}],
+"loop": false,
+"name": &"aim_diag_up__shotgun",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aim_diag_down__shotgun_0")
+}],
+"loop": false,
+"name": &"aim_diag_down__shotgun",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aim_down__shotgun_0")
+}],
+"loop": false,
+"name": &"aim_down__shotgun",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crouch__shotgun_0")
+}],
+"loop": false,
+"name": &"crouch__shotgun",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crouch_shoot__shotgun_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crouch_shoot__shotgun_1")
+}],
+"loop": false,
+"name": &"crouch_shoot__shotgun",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_die__shotgun_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_die__shotgun_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_die__shotgun_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_die__shotgun_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_die__shotgun_4")
+}],
+"loop": false,
+"name": &"die__shotgun",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle__hmg_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle__hmg_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle__hmg_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle__hmg_3")
+}],
+"loop": true,
+"name": &"idle__hmg",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__hmg_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__hmg_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__hmg_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__hmg_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__hmg_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_run__hmg_5")
+}],
+"loop": true,
+"name": &"run__hmg",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jump__hmg_0")
+}],
+"loop": false,
+"name": &"jump__hmg",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fall__hmg_0")
+}],
+"loop": false,
+"name": &"fall__hmg",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shoot__hmg_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shoot__hmg_1")
+}],
+"loop": false,
+"name": &"shoot__hmg",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aim_up__hmg_0")
+}],
+"loop": false,
+"name": &"aim_up__hmg",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shoot_up__hmg_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shoot_up__hmg_1")
+}],
+"loop": false,
+"name": &"shoot_up__hmg",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aim_diag_up__hmg_0")
+}],
+"loop": false,
+"name": &"aim_diag_up__hmg",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aim_diag_down__hmg_0")
+}],
+"loop": false,
+"name": &"aim_diag_down__hmg",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aim_down__hmg_0")
+}],
+"loop": false,
+"name": &"aim_down__hmg",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crouch__hmg_0")
+}],
+"loop": false,
+"name": &"crouch__hmg",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crouch_shoot__hmg_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crouch_shoot__hmg_1")
+}],
+"loop": false,
+"name": &"crouch_shoot__hmg",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_die__hmg_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_die__hmg_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_die__hmg_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_die__hmg_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_die__hmg_4")
+}],
+"loop": false,
+"name": &"die__hmg",
+"speed": 8.0
+}]

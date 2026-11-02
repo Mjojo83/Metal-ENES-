@@ -1,0 +1,14 @@
+GIMP Palette
+Name: pulmonoscorpius
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+142  86  81	c00
+192 139 124	c01
+233 186 165	c02
+ 88  42  46	c03
+136  92  84	c04
+176 135 121	c05
+ 26   7   4	c06
+230 179 173	c07
+ 16  12  20	outline
+224 196 186	c09

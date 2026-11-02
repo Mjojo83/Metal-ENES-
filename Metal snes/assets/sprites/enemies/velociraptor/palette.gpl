@@ -1,0 +1,14 @@
+GIMP Palette
+Name: velociraptor
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+ 54  40  23	c00
+101  84  60	c01
+142 125  98	c02
+120 114  74	c03
+173 164 119	c04
+219 208 164	c05
+ 13  14  11	c06
+160 154 126	c07
+ 16  12  20	outline
+206 198 176	c09

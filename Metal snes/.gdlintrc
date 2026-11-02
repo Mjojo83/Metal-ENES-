@@ -1,0 +1,6 @@
+# gdlint (gdtoolkit): reglas relajadas para el estilo de este proyecto
+disable:
+  - class-definitions-order
+  - max-line-length
+  - max-returns
+function-variable-name: '([a-z_][a-z0-9_]*|_|[A-Z][A-Za-z0-9]*)'

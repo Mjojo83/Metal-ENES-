@@ -1,0 +1,14 @@
+GIMP Palette
+Name: trex
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+ 53  21   6	c00
+ 99  67  43	c01
+138 107  81	c02
+132  94  53	c03
+183 146 100	c04
+225 191 147	c05
+ 30   5   0	c06
+203 178 150	c07
+ 16  12  20	outline
+202 182 161	c09

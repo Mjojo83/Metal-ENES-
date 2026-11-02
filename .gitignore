@@ -1,0 +1,14 @@
+# Godot (paso 0.2 de 01_Arquitectura_Tecnica)
+.godot/
+**/.godot/
+export.cfg
+export_presets.cfg
+*.translation
+builds/
+*.tmp
+# Python (herramientas de arte)
+__pycache__/
+*.pyc
+# Sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,23 @@
+{
+  "id": "arthropleura",
+  "era": "carbonifero",
+  "display_name": "Arthropleura",
+  "ai_profile": "advancer",
+  "health": 8,
+  "speed": 25,
+  "score": 400,
+  "damage": 1,
+  "cell": [
+    80,
+    32
+  ],
+  "sprite_size": [
+    60,
+    24
+  ],
+  "hurtbox": [
+    16,
+    48
+  ],
+  "sprite_frames": "res://assets/sprites/enemies/arthropleura/sprite_frames.tres"
+}

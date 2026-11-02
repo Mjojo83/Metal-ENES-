@@ -1,0 +1,23 @@
+{
+  "id": "pulmonoscorpius",
+  "era": "carbonifero",
+  "display_name": "Pulmonoscorpius",
+  "ai_profile": "advancer",
+  "health": 6,
+  "speed": 35,
+  "score": 450,
+  "damage": 1,
+  "cell": [
+    48,
+    48
+  ],
+  "sprite_size": [
+    37,
+    42
+  ],
+  "hurtbox": [
+    36,
+    30
+  ],
+  "sprite_frames": "res://assets/sprites/enemies/pulmonoscorpius/sprite_frames.tres"
+}

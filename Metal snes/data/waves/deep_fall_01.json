@@ -1,0 +1,154 @@
+{
+ "waves": {
+  "cret_01": {
+   "clear_condition": "all_dead",
+   "spawns": [
+    {
+     "enemy": "velociraptor",
+     "point": "cret1_right",
+     "delay": 0.5,
+     "count": 3,
+     "interval": 0.9
+    },
+    {
+     "enemy": "nipponites",
+     "point": "cret1_sky",
+     "delay": 2.0,
+     "count": 2,
+     "interval": 1.2
+    }
+   ]
+  },
+  "cret_02": {
+   "clear_condition": "all_dead",
+   "spawns": [
+    {
+     "enemy": "velociraptor",
+     "point": "cret2_right",
+     "delay": 0.3,
+     "count": 2,
+     "interval": 0.9
+    },
+    {
+     "enemy": "velociraptor",
+     "point": "cret2_left",
+     "delay": 2.5,
+     "count": 1
+    },
+    {
+     "enemy": "quetzalcoatlus",
+     "point": "cret2_right",
+     "delay": 4.0,
+     "count": 1
+    },
+    {
+     "enemy": "nipponites",
+     "point": "cret2_sky",
+     "delay": 5.0,
+     "count": 2,
+     "interval": 1.2
+    }
+   ]
+  },
+  "carb_01": {
+   "clear_condition": "all_dead",
+   "spawns": [
+    {
+     "enemy": "calamites",
+     "point": "carb_plant_a",
+     "delay": 0.0,
+     "count": 1
+    },
+    {
+     "enemy": "calamites",
+     "point": "carb_plant_b",
+     "delay": 0.0,
+     "count": 1
+    },
+    {
+     "enemy": "eryops",
+     "point": "carb_right",
+     "delay": 1.0,
+     "count": 2,
+     "interval": 1.5
+    },
+    {
+     "enemy": "meganeura",
+     "point": "carb_sky",
+     "delay": 2.0,
+     "count": 3,
+     "interval": 1.0
+    },
+    {
+     "enemy": "pulmonoscorpius",
+     "point": "carb_left",
+     "delay": 4.0,
+     "count": 1
+    },
+    {
+     "enemy": "arthropleura",
+     "point": "carb_right",
+     "delay": 6.0,
+     "count": 1
+    }
+   ]
+  },
+  "camb_01": {
+   "clear_condition": "all_dead",
+   "spawns": [
+    {
+     "enemy": "megarachne",
+     "point": "camb_mid",
+     "delay": 0.0,
+     "count": 1
+    },
+    {
+     "enemy": "trilobites",
+     "point": "camb_right",
+     "delay": 0.3,
+     "count": 4,
+     "interval": 0.7
+    },
+    {
+     "enemy": "marrella",
+     "point": "camb_left",
+     "delay": 2.0,
+     "count": 3,
+     "interval": 0.6
+    },
+    {
+     "enemy": "anomalocaris",
+     "point": "camb_sky",
+     "delay": 3.0,
+     "count": 2,
+     "interval": 1.5
+    },
+    {
+     "enemy": "hallucigenia",
+     "point": "camb_right",
+     "delay": 4.0,
+     "count": 3,
+     "interval": 0.8
+    }
+   ]
+  },
+  "boss_01": {
+   "clear_condition": "all_dead",
+   "spawns": [
+    {
+     "enemy": "trex",
+     "point": "boss_right",
+     "delay": 1.0,
+     "count": 1
+    },
+    {
+     "enemy": "velociraptor",
+     "point": "boss_left",
+     "delay": 12.0,
+     "count": 2,
+     "interval": 1.0
+    }
+   ]
+  }
+ }
+}

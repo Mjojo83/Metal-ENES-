@@ -1,0 +1,13 @@
+GIMP Palette
+Name: meganeura
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+145 146 153	c00
+203 199 194	c01
+243 238 227	c02
+ 65  53  64	c03
+114 100 100	c04
+156 142 135	c05
+197 179 168	c06
+ 16  12  20	outline
+251 248 241	c08

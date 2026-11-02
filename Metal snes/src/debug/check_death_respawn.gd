@@ -47,11 +47,11 @@ func _physics_process(_delta: float) -> void:
 			if stage_frame == 1:
 				enemy.global_position = player.global_position
 			if stage_frame == 5:
-				_ok("0.10 tocar a un enemigo mata al jugador", player.is_dead and not player.visible, "is_dead=%s visible=%s" % [player.is_dead, player.visible])
+				_ok("0.10 tocar a un enemigo mata al jugador", player.is_dead and player.collision.disabled, "is_dead=%s collision.disabled=%s" % [player.is_dead, player.collision.disabled])
 				_ok("0.10 Events.player_died se emite", died_count == 1, "died_count=%d" % died_count)
 				enemy.global_position = Vector2(-1000, -1000)  # lo quitamos del camino
 			if stage_frame == 75:  # ~1s de espera de respawn + margen
-				_ok("0.10 respawnea ~1s después, en el punto de spawn", not player.is_dead and player.visible and player.global_position.is_equal_approx(player.spawn_position), "pos=%s spawn=%s" % [player.global_position, player.spawn_position])
+				_ok("0.10 respawnea ~1s después, en el punto de spawn", not player.is_dead and not player.collision.disabled and player.global_position.is_equal_approx(player.spawn_position), "pos=%s spawn=%s" % [player.global_position, player.spawn_position])
 				_ok("0.10 Events.player_respawned se emite", respawned_count == 1, "respawned_count=%d" % respawned_count)
 				stage = 2
 				stage_frame = 0
@@ -70,7 +70,7 @@ func _physics_process(_delta: float) -> void:
 					if child == player or (is_instance_valid(child) and child.has_method("get_aim_direction")):
 						players_in_scene += 1
 				_ok("0.10 cinco muertes rápidas: sin crash, sigue habiendo un solo jugador", is_instance_valid(player) and players_in_scene == 1, "jugadores=%d" % players_in_scene)
-				_ok("0.10 cinco muertes rápidas: terminó en estado consistente", not player.is_dead and player.visible)
+				_ok("0.10 cinco muertes rápidas: terminó en estado consistente", not player.is_dead and not player.collision.disabled)
 				_ok("0.10 cinco muertes rápidas: respawnea siempre en spawn_position", player.global_position.is_equal_approx(player.spawn_position))
 				stage = 3
 				stage_frame = 0

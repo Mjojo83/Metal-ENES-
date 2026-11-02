@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://src/debug/check_camera_gate_wave.gd" id="1_script"]
+[ext_resource type="PackedScene" path="res://src/actors/player/player.tscn" id="2_player"]
+[ext_resource type="Script" path="res://src/levels/game_camera.gd" id="3_camera"]
+[ext_resource type="Script" path="res://src/levels/wave_spawner.gd" id="4_spawner"]
+[ext_resource type="Script" path="res://src/levels/camera_gate.gd" id="5_gate"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ground"]
+size = Vector2(2000, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gate"]
+size = Vector2(8, 224)
+
+[node name="CheckCameraGateWave" type="Node2D"]
+script = ExtResource("1_script")
+
+[node name="Ground" type="StaticBody2D" parent="."]
+position = Vector2(1000, 216)
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+shape = SubResource("RectangleShape2D_ground")
+
+[node name="Player" parent="." instance=ExtResource("2_player")]
+position = Vector2(300, 200)
+
+[node name="GameCamera" type="Camera2D" parent="."]
+position = Vector2(300, 112)
+limit_right = 2000
+script = ExtResource("3_camera")
+level_limits = Rect2(0, 0, 2000, 224)
+
+[node name="WaveSpawner" type="Node" parent="."]
+script = ExtResource("4_spawner")
+
+[node name="Gate" type="Area2D" parent="."]
+position = Vector2(400, 112)
+script = ExtResource("5_gate")
+gate_id = &"test_gate"
+lock_left = 320.0
+lock_right = 640.0
+wave_id = &"test"
+checkpoint = Vector2(600, 200)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gate"]
+shape = SubResource("RectangleShape2D_gate")

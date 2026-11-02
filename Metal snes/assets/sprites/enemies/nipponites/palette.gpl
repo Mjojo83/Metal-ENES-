@@ -1,0 +1,13 @@
+GIMP Palette
+Name: nipponites
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+100  97 106	c00
+153 147 144	c01
+198 190 182	c02
+ 62  51  39	c03
+110  96  76	c04
+152 138 113	c05
+197 185 173	c06
+ 16  12  20	outline
+228 223 218	c08

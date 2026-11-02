@@ -27,21 +27,15 @@ func _ok(label: String, cond: bool, detail: String = "") -> void:
 
 
 func _ready() -> void:
-	get_tree().node_added.connect(_on_node_added)
-	get_tree().node_removed.connect(_on_node_removed)
+	# Con pooling (fase 1.4) las balas no entran ni salen del árbol: se cuentan por la señal del
+	# arma y por Pools.active_count().
+	player.weapon.fired.connect(func(_w: WeaponData, _d: Vector2) -> void: total_fired += 1)
 	Events.enemy_killed.connect(_on_enemy_killed)
 
 
-func _on_node_added(node: Node) -> void:
-	if node.has_method("setup"):  # bullet.gd
-		total_fired += 1
-		alive_bullets += 1
-		peak_alive = max(peak_alive, alive_bullets)
-
-
-func _on_node_removed(node: Node) -> void:
-	if node.has_method("setup"):
-		alive_bullets -= 1
+func _count_bullets() -> void:
+	alive_bullets = Pools.active_count(&"bullet")
+	peak_alive = maxi(peak_alive, alive_bullets)
 
 
 func _on_enemy_killed(enemy_type: StringName, _pos: Vector2) -> void:
@@ -51,6 +45,7 @@ func _on_enemy_killed(enemy_type: StringName, _pos: Vector2) -> void:
 func _physics_process(_delta: float) -> void:
 	frame += 1
 	stage_frame += 1
+	_count_bullets()
 
 	match stage:
 		0:  # asentarse, sin enemigo en el camino todavia
@@ -70,8 +65,8 @@ func _physics_process(_delta: float) -> void:
 				stage = 2
 				stage_frame = 0
 
-		2:  # esperar a que las balas en vuelo salgan de pantalla y se liberen
-			if stage_frame >= 60:
+		2:  # esperar a que las balas agoten su alcance (400 px a 350 px/s ~ 1.15 s)
+			if stage_frame >= 90:
 				_ok("0.8 sin fuga de nodos: balas vivas vuelven a 0", alive_bullets == 0, "vivas=%d pico=%d" % [alive_bullets, peak_alive])
 				stage = 3
 				stage_frame = 0

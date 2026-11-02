@@ -1,0 +1,14 @@
+GIMP Palette
+Name: calamites
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+ 91  95  49	c00
+144 143  94	c01
+189 186 138	c02
+ 33  39  22	c03
+ 81  82  58	c04
+122 121  94	c05
+ 17  13   0	c06
+183 184 128	c07
+ 16  12  20	outline
+151 150 134	c09

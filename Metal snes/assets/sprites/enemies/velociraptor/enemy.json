@@ -1,0 +1,23 @@
+{
+  "id": "velociraptor",
+  "era": "cretacico",
+  "display_name": "Velociraptor",
+  "ai_profile": "advancer",
+  "health": 3,
+  "speed": 70,
+  "score": 200,
+  "damage": 1,
+  "cell": [
+    96,
+    48
+  ],
+  "sprite_size": [
+    74,
+    36
+  ],
+  "hurtbox": [
+    22,
+    24
+  ],
+  "sprite_frames": "res://assets/sprites/enemies/velociraptor/sprite_frames.tres"
+}

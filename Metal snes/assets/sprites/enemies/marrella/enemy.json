@@ -1,0 +1,23 @@
+{
+  "id": "marrella",
+  "era": "cambrico",
+  "display_name": "Marrella",
+  "ai_profile": "advancer",
+  "health": 2,
+  "speed": 80,
+  "score": 120,
+  "damage": 1,
+  "cell": [
+    48,
+    32
+  ],
+  "sprite_size": [
+    30,
+    23
+  ],
+  "hurtbox": [
+    22,
+    16
+  ],
+  "sprite_frames": "res://assets/sprites/enemies/marrella/sprite_frames.tres"
+}

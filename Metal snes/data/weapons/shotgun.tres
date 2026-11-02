@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://src/components/weapon_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/sprites/vfx/bullet_pellet.png" id="2_bullet"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/icon_shotgun.png" id="3_icon"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pickups/crate_shotgun.png" id="4_pickup"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"shotgun"
+display_name = "Escopeta"
+shout = "¡ABANICO!"
+projectile_key = &"bullet"
+bullet_texture = ExtResource("2_bullet")
+damage = 1
+fire_rate = 2.0
+projectiles_per_shot = 5
+spread_degrees = 25.0
+projectile_speed = 300.0
+projectile_range = 150.0
+max_ammo = 30
+is_default = false
+auto_fire = false
+icon = ExtResource("3_icon")
+pickup_texture = ExtResource("4_pickup")
+fire_sound = &"shot_shotgun"
+recoil_px = 3.0
+screenshake = 2.0
+hitstop_frames = 3
+muzzle_frames = 2

@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://src/components/enemy_data.gd" id="1_script"]
+[ext_resource type="SpriteFrames" path="res://assets/sprites/enemies/calamites/sprite_frames.tres" id="2_frames"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"calamites"
+display_name = "Calamites"
+era = "carbonifero"
+sprite_frames = ExtResource("2_frames")
+profile = 1
+max_health = 4
+speed = 0.0
+score = 100
+contact_damage = 1
+hurtbox_size = Vector2(12, 80)
+body_size = Vector2(8, 80)
+sprite_cell = Vector2i(48, 112)
+flying = false
+fly_height = 48.0
+detect_range = 200.0
+stop_distance = 0.0
+attack_range = 20.0
+attack_cooldown = 2.40
+telegraph_time = 0.50
+recover_time = 0.60
+lunge_speed = 0.0
+jump_velocity = -220.0
+jump_interval = 1.20
+ranged = true
+projectile_speed = 95.0
+hit_sound = &"hit"
+die_sound = &"enemy_die"

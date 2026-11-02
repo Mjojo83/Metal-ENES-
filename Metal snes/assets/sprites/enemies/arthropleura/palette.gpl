@@ -1,0 +1,14 @@
+GIMP Palette
+Name: arthropleura
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+ 60  25  17	c00
+106  71  53	c01
+145 112  90	c02
+127 122 128	c03
+182 173 168	c04
+228 219 207	c05
+ 14  13  13	c06
+171 150 138	c07
+ 16  12  20	outline
+166 145 132	c09

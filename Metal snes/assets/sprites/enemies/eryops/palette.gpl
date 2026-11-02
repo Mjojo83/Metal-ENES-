@@ -1,0 +1,17 @@
+GIMP Palette
+Name: eryops
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+138 132  61	c00
+193 184 115	c01
+238 229 165	c02
+ 32  33   0	c03
+ 78  76  23	c04
+118 115  67	c05
+ 76  82  14	c06
+128 130  67	c07
+172 172 114	c08
+ 17  14   0	c09
+167 161 101	c10
+ 16  12  20	outline
+202 202 168	c12

@@ -1,0 +1,23 @@
+{
+  "id": "trex",
+  "era": "cretacico",
+  "display_name": "Trex",
+  "ai_profile": "boss",
+  "health": 60,
+  "speed": 30,
+  "score": 5000,
+  "damage": 1,
+  "cell": [
+    144,
+    96
+  ],
+  "sprite_size": [
+    122,
+    90
+  ],
+  "hurtbox": [
+    60,
+    70
+  ],
+  "sprite_frames": "res://assets/sprites/enemies/trex/sprite_frames.tres"
+}

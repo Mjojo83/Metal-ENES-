@@ -1,0 +1,24 @@
+GIMP Palette
+Name: mariana
+Columns: 8
+# pixel_lab: paleta compartida del actor. "outline" = color del contorno.
+  0   0   0	outline
+  1   1   1	c01
+ 20   9   6	c02
+ 22  21  26	c03
+ 21  31  58	c04
+ 40  45  59	c05
+ 67  45  16	c06
+ 45  60  97	c07
+ 84  67  55	c08
+ 80  89  96	c09
+125  73  47	c10
+166 104  69	c11
+140 140 142	c12
+244 245 221	c13
+ 26  28  34	c14
+ 92  98 110	c15
+164 170 182	c16
+124  74  38	c17
+ 74  42  22	c18
+214 160  60	c19
